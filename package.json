@@ -1,8 +1,8 @@
 {
   "name": "vue-slip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue-slip",
-  "main": "index.js",
+  "main": "dist/lib/slip.js",
   "scripts": {
     "start": "node ./bin/www"
   },
