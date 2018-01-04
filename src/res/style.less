@@ -1,0 +1,36 @@
+html, body{
+    padding: 0; margin: 0;
+}
+.app{
+    width: 100%; overflow: hidden;
+}
+
+.li{
+    position: relative; border-bottom: 1px solid #CCCCCC;
+}
+
+.remove{
+    position: absolute; right: 0; top: 0; bottom: 0; background-color: red; color: #FFFFFF; width: 66px;
+    text-align: center;
+    &:after{
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+.see{
+    position: absolute; left: 0; top: 0; bottom: 0; background-color: purple; color: #FFFFFF; width: 66px;
+    text-align: center;
+    &:after{
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+.txt{
+    height: 50px; line-height: 50px; text-align: center; position: relative; z-index: 9; background-color: #FFFFFF;
+}
