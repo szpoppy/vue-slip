@@ -271,7 +271,7 @@ function install(vue, named = 'slip'){
                 }
                 event.stopPropagation()
 
-                opt.start && opt.start(this, opt, event)
+                opt.start && opt.start(this, event)
             })
             .on('end', function(x, y, event){
                 if(isScroll > 0){
@@ -292,7 +292,7 @@ function install(vue, named = 'slip'){
                     this.setSkewing(tx, ty)
                 }
                 currSlip = this
-                opt.end && opt.end(this, opt, event)
+                opt.end && opt.end(this, tx, ty, event)
             })
             .on('move', function(x, y, event){
                 if(isScroll == 0){
@@ -303,7 +303,7 @@ function install(vue, named = 'slip'){
                 }
                 event.preventDefault()
                 setTranslate(this.dom, x, y)
-                opt.move && opt.move(this, opt, event)
+                opt.move && opt.move(this, x, y, evnet)
             }).assign({
                 tx: 0,
                 ty: 0,

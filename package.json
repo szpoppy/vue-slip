@@ -1,6 +1,6 @@
 {
   "name": "vue-slip",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "vue-slip",
   "main": "dist/lib/slip.js",
   "scripts": {
