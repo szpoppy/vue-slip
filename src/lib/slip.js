@@ -292,7 +292,7 @@ function install(vue, named = 'slip'){
                     this.setSkewing(tx, ty)
                 }
                 currSlip = this
-                opt.end && opt.end(this, tx, ty, event)
+                opt.end && opt.end(this, event)
             })
             .on('move', function(x, y, event){
                 if(isScroll == 0){
